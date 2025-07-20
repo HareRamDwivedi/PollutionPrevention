@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        /* background-color: rgb(255, 255, 255); */
+        background-image: url(https://images.unsplash.com/photo-1585495596846-f2818568f1a5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-size: cover;
+        /* overflow: hidden; */
+        background-position: center;
+        /* background-color: black; */
+        /* background: linear-gradient(141deg, #d9f2c8 0%, #2cb5e8 51%, #d9f2c8 75%); */
+
+        /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+
+    }
+    @keyframes load {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    @media screen and (max-width: 770px) {
+        body {
+            overflow: scroll;
+        }
+    }
+
+    .table { 
+        margin-top: 5%;
+        animation: load 1.2s ease-in-out ;
+        /* background: #dbf9c7; */
+        border-radius: 20px;
+        background-color: transparent;
+        background: transparent;
+    }
+
+    .container {
+        text-align: center;
+
+    }
+
+    #registerform {
+        margin-top: 5%;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    #submit {
+        width: 100%;
+        border-radius: 40px;
+        font-size: 1.5rem;
+    }
+
+    /* Apply the rotation animation to the image */
+    /* .rotating-image {
+      animation: rotate 5s linear infinite; /* Adjust the duration and timing function as needed */
+    
+    .td1 {
+        border-radius: 25px;
+    }
+
+    input {
+        background: transparent;
+        border: solid rgb(210, 208, 208);
+    }
+
+    .ico {
+        font-size: 1.8rem;
+        justify-content: center;
+        padding: 5%;
+        color: #a92323;
+    }
+
+    header{
+        width: 100%;
+    }
+    header h1{
+        animation: load 1.2s ease-in-out ;
+        width: 100%;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+        font-size: 12vh;
+        color: wheat;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 100;
+        background-color: black;
+        mix-blend-mode: difference;
+    }
+
+    #textt{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        
+        align-content: center;
+    }
+    #textt p{
+        position: absolute;
+        letter-spacing: 3px;
+        line-height: 15px;
+        line-height:45px;
+        word-spacing: 5px;
+        width: 88%;
+        height: 100%;
+        margin-top: 14%;
+        margin-left: -66px;
+        font-weight:900;
+        text-align: center;
+        color: wheat;
+        text-shadow: 0px 1px 2px white;
+        mix-blend-mode: difference;
+        background-color: rgb(0, 0, 0);
+        font-size: 29px;
+        animation: upr ease-in 3.5s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        -webkit-text-stroke: 3px solid black;
+    }
+
+    @keyframes upr {
+        0%{
+            margin-left: -1000px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        50%{
+            margin-left: -66px;
+            background-color: rgba(0, 0, 0, 0.304);
+        }
+        100%{
+            margin-left:-60px;
+            background-color: black;
+        }
+    }
+
+    img {
+        position: absolute;
+        margin-top: 20%;
+        width: 80%;
+        /* animation: rotate 30s linear infinite; */
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    table{
+        background-color: transparent;
+        border: none;
+        box-shadow: 3px 3px 7px 3px #0c607e;
+        border-radius: 50px;
+        margin-top: 6vh;
+    }
+    .table{
+        border-radius: 50px;
+        background-color: transparent;
+
+    }
+    input{
+        border: none;
+    }
+    .roww:hover{border-radius: 200px;
+        background-color: rgba(0, 0, 0, 0.605);
+        
+    }
+    ::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 >Pollution Awareness</h1>
+        </header>
+        <!-- Register should be there in place fo login -->
+        <div class="row">
+            <div class="col-md-8" id="textt" >
+                <!-- <img  src="https://cdn.pixabay.com/photo/2016/11/19/13/52/earth-1839348_1280.jpg" alt=""> -->
+                <p>
+                    Pradushan ek chupke se badhi kahani ka shabd hai humari laparwahi ki. Dharti ka har ansu humare
+                    karmo ka hissa hai. Aaj se, safai ki or badho, apni dharti ko saaf aur swasth banane ke liye. Badlo,
+                    warna pradushan hi humari kahani ban jayega.
+                </p>
+            </div>
+            <div class="col-md-4" id="registerform">
+                <form action="/register" method="get">
+                    <table class="">
+                        <tr class="">
+                            <td><i class="fa-solid fa-user ico"></i></td>
+                            <td><input type="text" name="t1" required class="td1 table" placeholder="User Name" style="width: 90%; margin-left: -22px;"> </td>
+                        </tr>
+
+                        <tr class="roww">
+                            <td><i class="fa-solid fa-envelope ico"></i></td>
+                            <td><input type="text" name="t2" required class="td1 table " placeholder="email@gmail.cpm">
+                            </td>
+                        </tr>
+
+                        <tr class="roww">
+                            <td><i class="fa-solid fa-phone fa-shake ico"></i></i></td>
+                            <td><input type="text" name="t3" required class="td1 table " placeholder="Phone Number">
+                            </td>
+                        </tr>
+
+                        <tr class="roww">
+                            <td><i class="fa-solid fa-lock ico"></i></td>
+                            <td><input type="text" name="t4" required class="td1 table " placeholder="Password"></td>
+                        </tr>
+
+                        <tr class="roww">
+                            <td><i class="fa-solid fa-lock ico"></i></td>
+                            <td><input type="text" name="t5" required class="td1 table " placeholder="Confirm Password">
+                            </td>
+                        </tr>
+
+                        <tr class="table">
+                            <td><input type="submit" class="btn btn-outline-success" id="submit" name="b1"
+                                    value="Register"></td>
+                            <td style="justify-content: center;">Already have an account <a href="/login">Login</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- hear is a message tag -->
+                    <%=msg %>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br><br><br>
+
+    </form>
+</body>
+
+</html>

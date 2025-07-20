@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollution</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      body{
+        animation: load 1.2s ease-in-out;
+        background-color: #d9f2c8;
+        position: relative;
+        background: linear-gradient(141deg, #d9f2c8 0%, #2cb5e8 51%, #d9f2c8 75%);
+        overflow-x: hidden; 
+      } 
+
+      @keyframes load {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+      .first-navigation{
+        position: fixed;
+        z-index: 999;
+        background-color:white;
+        background: linear-gradient(141deg, #d9f2c8 0%, #2cb5e8 51%, #d9f2c8 75%);
+        gap: 20px;
+        width: 100%;
+      }
+      #main-content{
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+      }
+      .article1
+      {
+        margin-top: 1%;
+      }
+      .img1 {
+        width: 250px;
+      }
+      #Type
+      {
+        color: #043e53;
+        background: #51aaca;
+      }
+      .pollhead{
+        font-size: 4rem;
+        background-color:#80ba59 ;
+        border-radius: 50px;
+        text-align: center;
+
+      }
+      .content1{
+        font-size: 1.3rem;
+      }
+      .first{
+        margin: 4px 50px;
+      }
+      a:hover {
+        font-size: 1.4rem;
+        text-decoration: underline;
+        color: aquamarine;
+      }
+      .last{
+        font-size: 1.4rem;
+        color: #26606a;
+      }
+      .yel {
+        font-size: 2rem;
+      }
+      .social-icon{
+        color: #80ba59;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+<body>
+  <section class="first-navigation">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#">Around Us</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="navLeft">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Source">Sources</a>
+            </li>
+            
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Types
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#Air">Air</a>
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="#Water">Water</a>
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="#Soil">Soil</a>
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="#Sound">Sound</a>
+              </div>
+            </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#Prevention">Prevention</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#Management">Waste Management</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form1">Your Thoughts</a>
+              </li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </nav>
+  </section>
+
+
+  <div id="main-content">
+  
+      <div class="first">
+        <p class="pollhead" id="Home">Pollution</p>
+      <aside>
+        Pollution represents the discharge of detrimental substances into the environment, precipitating 
+        adverse consequences for ecosystems, human health, and overall living standards. Its manifestations
+         encompass air, water, soil, and noise pollution. Pollution inflicts harm upon natural systems,
+          exacerbates climate change, and engenders health-related challenges. Addressing this issue 
+          entails the implementation of stringent regulations, adoption of cleaner technologies, and 
+          promotion of sustainable practices, all aimed at preserving both our planet and the welfare of
+           its inhabitants.
+      </aside>
+      </div>
+      <br><hr><br>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+  <img style="width: 100%;" class="firstimg" src="https://www.nps.gov/subjects/air/images/Sources_Graphic_Huge.jpg?maxwidth=1300&maxheight=1300&autorotate=false" alt="pollution">
+  <br><p>Representation of emition of pollution in aur environment</p>
+</div>
+  <div class="col-md-1"></div>
+</div>
+      <br><br><br>
+  <div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <p class="content1">
+        Pollution is the introduction of harmful materials into the environment. These harmful materials are called pollutants. Pollutants can be natural, such as volcanic ash. They can also be created by human activity, such as trash or runoff produced by factories. Pollutants damage the quality of air, water, and land.
+        <br> <br>
+        Many things that are useful to people produce pollution. Cars spew pollutants from their exhaust pipes. Burning coal to create electricity pollutes the air. Industries and homes generate garbage and sewage that can pollute the land and water. Pesticides—chemical poisons used to kill weeds and insects—seep into waterways and harm wildlife.
+        <br><br>
+        All living things—from one-celled microbes to blue whales—depend on Earth’s supply of air and water. When these resources are polluted, all forms of life are threatened.
+        <br><br>
+        Pollution is a global problem. Although urban areas are usually more polluted than the countryside, pollution can spread to remote places where no people live. For example, pesticides and other chemicals have been found in the Antarctic ice sheet. In the middle of the northern Pacific Ocean, a huge collection of microscopic plastic particles forms what is known as the Great Pacific Garbage Patch.
+        <br><br>
+        Air and water currents carry pollution. Ocean currents and migrating fish carry marine pollutants far and wide. Winds can pick up radioactive material accidentally released from a nuclear reactor and scatter it around the world. Smoke from a factory in one country drifts into another country.
+        <br><br>
+        In the past, visitors to Big Bend National Park in the U.S. state of Texas could see 290 kilometers (180 miles) across the vast landscape. Now, coal-burning power plants in Texas and the neighboring state of Chihuahua, Mexico have spewed so much pollution into the air that visitors to Big Bend can sometimes see only 50 kilometers (30 miles).
+      </p>
+  </div>   
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+    <img style="width: 100%;" class="firstimg" src="https://www.nps.gov/subjects/air/images/Transport_Graphic_Huge.jpg?maxwidth=1300&maxheight=1300&autorotate=false" alt="pollution">
+    <br><p>Representation of emition of pollution in aur environment</p>
+  </div>
+    <div class="col-md-1"></div>
+  </div>
+<hr>
+    
+    <div class="row" >
+      <div class="col-md-3"></div>
+      <div class="col-md-7">
+        <p class="content1">
+          <h1 id="Source" class="pollhead">Nature of pollution sources</h1>
+          <br>
+          Pollution is often described as point source or diffuse (or non-point) pollution.
+          <br><br>
+          <span style="color: #68be2e; font-size: 1.2em;">Point source pollution </span>enters a water body at a specific site and is generally readily identified. Potential point sources of pollution include effluent discharges from sewage treatment works and industrial sites, power stations, landfill sites, fish farms, and oil spillage via a pipeline from industrial sites.
+          <br><br>
+          Point source pollution is generally readily prevented since it is possible to identify where it is coming from and, having done so, those responsible for causing the pollution can take preventative measures through immediate remedial action or longer-term investment in treatment and control facilities.
+          <br><br>
+          <span style="color: #68be2e; font-size: 1.2em;">Diffuse pollution</span> arises where substances are widely used and dispersed over an area as a result of land-use activities such as urban development, amenity, farming and forestry. These activities may be recent or have been carried out in the past. It is often difficult to identify specific sources of such pollution and therefore take immediate action to prevent it, since prevention often requires major changes to land use and management practices.
+          <br><br>
+          Examples of diffuse pollution include the leaching to surface water and groundwater of contaminants from roads, manures, nutrients and pesticides used in agriculture and forestry, and atmospheric deposition of contaminants arising from industry. A special case arises where, for example, a power station may emit sulphur dioxide and nitrous oxide to the air. Although this is a point source, the deposition (fallout) and hence, impact, will be over a wide area as diffuse pollution.
+        </p>
+      </div>
+    </div>
+    <br><hr><br>
+
+    <div>
+      <div class="row" >
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <p class="content1">
+            <h1 id="Type" class="pollhead" >Types of Pollution</h1>
+            <br>
+            <h2 style="color: #0e5c78;" id="Air">Air Pollution</h2>
+              Sometimes, air pollution is visible. A person can see dark smoke pour from the exhaust pipes of large trucks or factories, for example. More often, however, air pollution is invisible.
+              <br><br>
+              Polluted air can be dangerous, even if the pollutants are invisible. It can make people’s eyes burn and make them have difficulty breathing. It can also increase the risk of lung cancer.
+              <br><br>
+              Sometimes, air pollution kills quickly. In 1984, an accident at a pesticide plant in Bhopal, India, released a deadly gas into the air. At least 8,000 people died within days. Hundreds of thousands more were permanently injured.
+              <br><br>
+              Volcanic gases, such as sulfur dioxide, can kill nearby residents and make the soil infertile for years. Mount Vesuvius, a volcano in Italy, famously erupted in 79, killing hundreds of residents of the nearby towns of Pompeii and Herculaneum. Most victims of Vesuvius were not killed by lava or landslides caused by the eruption. They were choked, or asphyxiated, by deadly volcanic gases.
+              <br><br>
+              In 1986, a toxic cloud developed over Lake Nyos, Cameroon. Lake Nyos sits in the crater of a volcano. Though the volcano did not erupt, it did eject volcanic gases into the lake. The heated gases passed through the water of the lake and collected as a cloud that descended the slopes of the volcano and into nearby valleys. As the toxic cloud moved across the landscape, it killed birds and other organisms in their natural habitat. This air pollution also killed thousands of cattle and as many as 1,700 people.
+              <br><br>
+              Most air pollution is not natural, however. It comes from burning fossil fuels—coal, oil, and natural gas. When gasoline is burned to power cars and trucks, it produces carbon monoxide, a colorless, odorless gas. The gas is harmful in high concentrations, or amounts. City traffic produces highly concentrated carbon monoxide.
+              <br><br>
+            Air pollution is a significant risk factor for a number of pollution-related diseases, including respiratory infections, heart disease, chronic obstructive pulmonary disease (COPD), stroke, and lung cancer.[5] [Growing evidence suggests that air pollution exposure may be associated with reduced IQ scores, impaired cognition,[6] increased risk for psychiatric disorders such as depression[7] and detrimental perinatal health.[8] The human health effects of poor air quality are far reaching, but principally affect the body's respiratory system and the cardiovascular system. Individual reactions to air pollutants depend on the type of pollutant a person is exposed to,[9][10] the degree of exposure, and the individual's health status and genetics.[11]
+            <br><br>
+            Outdoor air pollution attributable to fossil fuel use alone causes ~3.61 million deaths annually, making it one of the top contributors to human death,[5][12] with anthropogenic ozone and PM2.5 causing ~2.1 million.[13][14] Overall, air pollution causes the deaths of around 7 million people worldwide each year, or a global mean loss of life expectancy (LLE) of 2.9 years,[15] and is the world's largest single environmental health risk, which has not shown significant progress since at least 2015.[5][16][17][18] Indoor air pollution and poor urban air quality are listed as two of the world's worst toxic pollution problems in the 2008 Blacksmith Institute World's Worst Polluted Places report.[19] The scope of the air pollution crisis is large: 90% of the world's population breathes dirty air to some degree. Although the health consequences are extensive, the way the problem is handled is considered largely haphazard[20][21][22] or neglected.[18]
+            <br><br>
+            Productivity losses and degraded quality of life caused by air pollution are estimated to cost the world economy $5 trillion per year[23][24][25] but, along with health and mortality impacts, are an externality to the contemporary economic system and most human activity, albeit sometimes being moderately regulated and monitored.[26][27] Various pollution control technologies and strategies are available to reduce air pollution.[28][29] Several international and national legislation and regulation have been developed to limit the negative effects of air pollution.[30] Local rules, when properly executed, have resulted in significant advances in public health.[31] Some of these efforts have been successful at the international level, such as the Montreal Protocol,[32] which reduced the release of harmful ozone depleting chemicals, and the 1985 Helsinki Protocol,[33] which reduced sulfur emissions,[34] while others, such as international action on climate change,[35][36][37] have been less successful.
+          
+          
+            </p>
+        </div>
+        <div class="col-md-5" style="text-align: center; margin-top: 20%;">
+          <img style="margin-top: 10%; width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Share_of_deaths_from_indoor_air_pollution%2C_OWID.svg/1280px-Share_of_deaths_from_indoor_air_pollution%2C_OWID.svg.png" alt="">
+          <img style="margin-top: 20%; width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Share_of_the_population_exposed_to_air_pollution_levels_above_WHO_guidelines%2C_OWID.svg/1280px-Share_of_the_population_exposed_to_air_pollution_levels_above_WHO_guidelines%2C_OWID.svg.png" alt="">
+       
+        </div>
+      </div>
+      
+      <img style="margin-left: 20%;" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Beijing_smog_comparison_August_2005.png" alt="">
+      <p style="margin-left: 20%;">Befor and After image of Air Pollution</p>
+      <br><hr><br>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h2 style="color: #0b6c90;" id="Water">Water Pollution</h2>
+        <p>
+          Some polluted water looks muddy, smells bad, and has garbage floating in it. Some polluted water looks clean, but is filled with harmful chemicals you can’t see or smell.
+            <br><br>
+            Polluted water is unsafe for drinking and swimming. Some people who drink polluted water are exposed to hazardous chemicals that may make them sick years later. Others consume bacteria and other tiny aquatic organisms that cause disease. The United Nations estimates that 4,000 children die every day from drinking dirty water.
+            <br><br>
+            Sometimes, polluted water harms people indirectly. They get sick because the fish that live in polluted water are unsafe to eat. They have too many pollutants in their flesh.
+            <br><br>
+            Human activity also contributes to water pollution. Chemicals and oils from factories are sometimes dumped or seep into waterways. These chemicals are called runoff. Chemicals in runoff can create a toxic environment for aquatic life. Runoff can also help create a fertile environment for cyanobacteria, also called blue-green algae. Cyanobacteria reproduce rapidly, creating a harmful algal bloom (HAB). Harmful algal blooms prevent organisms such as plants and fish from living in the ocean. They are associated with “dead zones” in the world’s lakes and rivers, places where little life exists below surface water.
+            <br><br>
+            Oil spills are another source of water pollution. In April 2010, the Deepwater Horizon oil rig exploded in the Gulf of Mexico, causing oil to gush from the ocean floor. In the following months, hundreds of millions of gallons of oil spewed into the gulf waters. The spill produced large plumes of oil under the sea and an oil slick on the surface as large as 24,000 square kilometers (9,100 square miles). The oil slick coated wetlands in the U.S. states of Louisiana and Mississippi, killing marsh plants and aquatic organisms such as crabs and fish. Birds, such as pelicans, became coated in oil and were unable to fly or access food. More than two million animals died as a result of the Deepwater Horizon oil spill.
+            <br><br>
+            Buried chemical waste can also pollute water supplies. For many years, people disposed of chemical wastes carelessly, not realizing its dangers. In the 1970s, people living in the Love Canal area in Niagara Falls, New York, suffered from extremely high rates of cancer and birth defects. It was discovered that a chemical waste dump had poisoned the area’s water. In 1978, 800 families living in Love Canal had to abandon their homes.
+            <br><br>
+            If not disposed of properly, radioactive waste from nuclear power plants can escape into the environment. Radioactive waste can harm living things and pollute the water.
+            <br><br>
+            Sewage that has not been properly treated is a common source of water pollution. Many cities around the world have poor sewage systems and sewage treatment plants. Delhi, the capital of India, is home to more than 21 million people. More than half the sewage and other waste produced in the city are dumped into the Yamuna River. This pollution makes the river dangerous to use as a source of water for drinking or hygiene. It also reduces the river’s fishery, resulting in less food for the local community.
+            <br><br>
+            A major source of water pollution is fertilizer used in agriculture. Fertilizer is material added to soil to make plants grow larger and faster. Fertilizers usually contain large amounts of the elements nitrogen and phosphorus, which help plants grow. Rainwater washes fertilizer into streams and lakes. There, the nitrogen and phosphorus cause cyanobacteria to form harmful algal blooms.
+            <br><br>
+            Rain washes other pollutants into streams and lakes. It picks up animal waste from cattle ranches. Cars drip oil onto the street, and rain carries it into storm drains, which lead to waterways such as rivers and seas. Rain sometimes washes chemical pesticides off of plants and into streams. Pesticides can also seep into groundwater, the water beneath the surface of the Earth.
+            <br><br>
+          Water pollutants may cause disease or act as poisons. Bacteria and parasites in poorly treated sewage may enter drinking water supplies and cause digestive problems such as cholera and diarrhea. Hazardous chemicals, pesticides, and herbicides from industries, farms, homes and golf courses can cause acute toxicity and immediate death, or chronic toxicity that can lead to neurological problems or cancers. Many water pollutants enter our bodies when we use water for drinking and food preparation. The pollutants enter the digestive tract. From there, they can reach other organs in the body and cause various illnesses. Chemicals come in contact with the skin from washing clothes, or from swimming in polluted water and may lead to skin irritations. Hazardous chemicals in water systems can also affect the animals and plants which live there. Sometimes these organisms will survive with the chemicals in their systems, only to be eaten by humans who may then become mildly ill or develop stronger toxic symptoms. The animals and plants themselves may die or not reproduce properly.
+          </p>
+
+      </div>
+      <div class="col-md-5">
+        <img src="" alt="">
+        <img style="margin-top: 20%; width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Water-bodies-good-water-quality.svg/1280px-Water-bodies-good-water-quality.svg.png" alt="">
+      <img style="margin-top: 20%; width: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Dumping_of_faecal_sludge_into_the_river.jpg/1280px-Dumping_of_faecal_sludge_into_the_river.jpg" alt="">
+      </div>
+    </div>
+    <div>
+      <img style="width: 100%;" src="https://www.bcwater.org/wp-content/uploads/2020/05/pollution.jpg" alt="">
+    </div>
+    <br><br><hr><br>
+
+    <div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p>
+            <h2 style="color: #07506a;" id="Soil" >Soil Pollution</h2>
+            Soil pollution is defined as the presence of toxic chemicals (pollutants or contaminants) in the soil, in very high concentrations to pose a risk to human health and the ecosystem. Or in simple words Alteration in the natural soil due to human activities is termed Soil Pollution. For example, exposure to soil containing high concentrations of benzene can increase the risk of soil pollution diseases like contracting leukemia. 
+<br><br>
+All the soils contain compounds that are harmful to human beings and other living organisms. However, the concentration of such substances in unpolluted soil is so low that they do not pose any threat to the surroundings but when the concentration of such toxic substances becomes high enough to cause damage to living organisms, the soil is said to be contaminated.
+<br><br>
+Soil contamination can occur because of human activities or because of natural processes. However, mostly it is due to human activities. It occurs due to many different activities such as overuse of pesticides the soil will lose its fertility and the presence of excess chemicals will increase the acidity or alkalinity of soil and hence degrading the quality of the soil.
+<br><br>
+Types of Soil ​Pollution
+Agriculture soil pollution is caused due to the excessive use of pesticides and insecticides.
+
+Soil Pollution by industrial discharges of chemicals from mining and manufacturing of goods.
+
+Solid waste soil pollution/ Poor management or inefficient disposal of waste.
+
+Soil Pollution due to urban activities. etc
+<br><br>
+Soil Pollution Causes
+Industrial Pollution
+The discharge of industrial waste into soils can result in soil pollution.  In India, as mining and manufacturing activities are increasing rapidly, soil degradation is also increasing. The extraction of minerals from the earth is responsible for affecting soil fertility. Whether it is iron ore or coal, the by-products are contaminated, and they are disposed of in a manner that is not considered safe. As a result, the industrial waste stays on the soil surface for a long duration and makes it unsuitable for further use.
+<br><br>
+Agricultural Activities
+The use of insecticides and pesticides for a long period can cause soil pollution. Repetitive use can cause insects and pests to become resistant to it. Instead of killing pests and insects, it degrades the soil quality. They are full of chemicals that are not produced in nature and cannot be broken down by them. As a result, they seep into the ground after they mix with water and slowly reduce the fertility of the soil. Plants absorb many of these pesticides, and after decomposition cause soil pollution.
+<br><br>
+Waste Disposal
+Disposal of plastics and other solid waste is a serious issue that causes soil pollution, disposal of electrical items such as batteries causes an adverse effect on the soil due to the presence of harmful chemicals. Eg: lithium present in batteries can cause the leaching of soil. Human waste such as urine, faeces, diapers, etc is dumped directly in the land. It causes both soil and water pollution.
+<br><br>
+Acid Rain
+It is caused when pollutants present in the air mix with the rain and fall back on the ground. The polluted water could dissolve away some of the essential nutrients found in soil and change the structure of the soil thus making it unsuitable for agriculture.
+<br><br>
+Heavy Metals
+The presence of heavy metals (such as lead and mercury) in very high concentrations present in soils can cause them to become highly toxic for human beings.
+<br><br>
+Nuclear Waste
+It can also lead to soil degradation.
+<br><br>
+Oil Spills
+Oil leaks can happen during the storage or transport of chemicals, the chemicals present in the fuel deteriorates the quality of soil and make them unsuitable for further cultivation, chemicals can also enter into the groundwater through the soil, and hence it will make water undrinkable.
+<br><br>
+Effects of Soil Pollution
+Soil pollution affects the health of humans, plants, and animals. Crops or plants grown on such contaminated soil absorb toxic material from the soil and will decrease the agricultural output of the land. When animals or human beings consume these crops or plants the toxic material can pass into their body.
+<br><br>
+Long-term consumption of these crops may cause chronic diseases that are untreatable. children are usually more susceptible to exposure to contaminants because they come in close contact with the soil by playing in the ground, So, it is always important to test the quality of the soil before allowing kids to play there, especially in an industrialized area.
+<br><br>
+Effects of Soil Pollution on Human Health
+The contamination of soil has a major consequence on human health. Crops and plants that are grown on polluted soil absorb most of the pollution and then pass them to humans. Living, working, or playing in contaminated soil can lead to respiratory diseases, skin diseases, and other health problems. Diseases caused by soil pollution include Irritation of the skin and the eyes, Headaches, nausea, vomiting, Coughing, pain in the chest, and wheezing.
+<br><br>
+Effects on Plants 
+In such a short period of time, plants are unable to adapt to the soil change chemistry. Fungi and bacteria found in the soil that bind them together start to decline, which creates an additional problem in soil erosion. Regular use of chemical fertilizers, inorganic fertilizers, pesticides will decrease the fertility of the soil and alter the structure of soil. This will lead to a decrease in soil quality and poor quality of crops. The fertility of the soil diminishes slowly, making land unsuitable for agriculture and any local vegetation to survive.
+<br><br>
+
+Reduced Use of Chemical Fertilizers
+Chemical fertilizers are more damaging than helpful. While the right quantity can help the soil become more fertile, too much might potentially poison it. Chemical fertilizers in excess could harm the soil in a variety of ways. It has the ability to affect the soil's pH values.
+<br><br>
+
+Reforestation and Afforestation Should be Promoted
+Soil erosion, which is produced by deforestation, is one of the major sources of soil pollution. With an ever-increasing population, it is only logical that mankind requires more and more room to expand their civilization. It is frequently accomplished at the expense of soil health. Reforestation of a deforested area should be encouraged to prevent this from happening.
+<br><br>
+
+Recycle and Reuse Products
+These measures not only reduce waste output, but they also reduce soil pollution. Plastic now makes up a significant portion of the waste flow. The great majority of these wastes are buried in landfills.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img style="margin-top: 20%; width: 100%;" src="https://npr.brightspotcdn.com/dims4/default/bc3bb12/2147483647/strip/true/crop/1280x950+0+0/resize/880x653!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fkhpr%2Ffiles%2F201404%2FSlum_and_Dirty_River_Wiki_Commoms.jpg" alt="">
+        <img style="margin-top: 20%; width: 100%;" src="https://t3.ftcdn.net/jpg/05/09/37/92/360_F_509379281_Lhc3ae00r0NsVnGUtMnG1uaprdG4nM4L.jpg" alt="">
+        <img style="margin-top: 20%; width: 100%;" src="data:image/jpeg;base64,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" alt="">
+          <p>This is not just an ordinary or natural Mounatin <br>It is special because it is created by garbage thrown by Us <br></p>
+          <img style="margin-top: 20%; width: 100%;" src="https://greentumble.com/wp-content/uploads/2017/01/land-pollution.jpg" alt="">
+
+        </div>
+      </div>
+
+      <br><br><hr><br>
+
+      <div>
+        <div class="row">
+          <div class="col-md-1"> </div>
+          <div class="col-md-6">     
+            <p>
+              <h2 style="color: #68be2e;" id="Sound">Sound Pollution</h2>
+              Noise pollution, or sound pollution, is the propagation of noise or sound with ranging impacts on the activity of human or animal life, most of which are harmful to a degree. The source of outdoor noise worldwide is mainly caused by machines, transport and propagation systems.[1][2][3] Poor urban planning may give rise to noise disintegration or pollution, side-by-side industrial and residential buildings can result in noise pollution in the residential areas. Some of the main sources of noise in residential areas include loud music, transportation (traffic, rail, airplanes, etc.), lawn care maintenance, construction, electrical generators, wind turbines, explosions and people.
+              <br><br>
+              Documented problems associated with noise in urban environments go back as far as ancient Rome.[4] Research suggests that noise pollution in the United States is the highest in low-income and racial minority neighborhoods,[5] and noise pollution associated with household electricity generators is an emerging environmental degradation in many developing nations.[6]
+              <br><br>
+              High noise levels can contribute to cardiovascular effects in humans and an increased incidence of coronary artery disease.[7][8] In animals, noise can increase the risk of death by altering predator or prey detection and avoidance, interfere with reproduction and navigation, and contribute to permanent hearing loss.[9] A substantial amount of the noise that humans produce occurs in the ocean. Up until recently, most research on noise impacts has been focused on marine mammals, and to a lesser degree, fish.[10][11] In the past few years, scientists have shifted to conducting studies on invertebrates and their responses to anthropogenic sounds in the marine environment. This research is essential, especially considering that invertebrates make up 75% of marine species, and thus compose a large percentage of ocean food webs.[11] Of the studies that have been conducted, a sizable variety in families of invertebrates have been represented in the research. A variation in the complexity of their sensory systems exists, which allows scientists to study a range of characteristics and develop a better understanding of anthropogenic noise impacts on living organisms.
+            </p>
+           </div>
+          <div class="col-md-5"> 
+            <img style="width: 100%; margin-top: 20%;" src="https://cdn1.byjus.com/wp-content/uploads/2023/03/Noise-Pollution-2.png" alt="">         </div>
+        </div>
+      </div>
+      <div>
+        <img style="margin-left:2%; margin-right: 10%; width: 80%;" src="https://pbs.twimg.com/media/Deh8LsCWAAIOw35.jpg:large" alt="">
+      </div>
+    </div>
+
+    <div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <p>
+            <h2 id="Prevention" class="pollhead">Pollution prevention</h2>
+           often referred to as P2 (Pollution Prevention) or source reduction, is a proactive and sustainable approach to minimize or eliminate pollution at its source. Instead of solely focusing on managing pollutants after they have been created, pollution prevention aims to reduce or prevent the generation of pollutants in the first place. This approach has gained prominence due to its effectiveness in reducing environmental impacts, improving public health, and saving resources. In this discussion, we'll explore pollution prevention comprehensively.
+            <br><br>
+  <h4>1. What is Pollution Prevention?</h4>
+   Pollution prevention encompasses a set of strategies and practices aimed <at:br></at:br>
+    Reducing the release of pollutants into the <environment class="br"></environment>
+    Minimizing waste generation. <br>
+    Promoting the efficient use of resources.
+            <br><br>
+            <h4>2. Types of Pollution Prevention:</h4>
+    <h5>Source Reduction:</h5> This involves reducing or eliminating the use of harmful substances or adopting cleaner technologies to prevent pollution. For example, using water-based paints instead of solvent-based ones to reduce volatile organic compound (VOC) emissions.
+    <h5>Process Modification:</h5> Altering industrial processes to reduce pollution. For instance, optimizing manufacturing processes to use fewer raw materials or energy.
+    <h5>Product Reformulation:</h5> Changing the composition of products to make them less harmful. For example, producing eco-friendly detergents that do not contain phosphates.
+    <h5>Waste Minimization:</h5> Reducing the generation of waste through methods like recycling, reusing materials, and composting.
+<br>
+            <h4>3. Benefits of Pollution Prevention:
+            </h4>
+    <h5>Environmental:</h5> P2 reduces the release of harmful substances into air, water, and soil, which helps protect ecosystems and biodiversity.
+    <h5>Economic:</h5> It can lead to cost savings through reduced waste disposal and lower resource consumption.
+    <h5>Health:</h5> P2 measures can improve public health by reducing exposure to hazardous substances.
+    <h5>Regulatory Compliance:</h5> Many regulations now require or incentivize pollution prevention.
+<br>
+            <h4>4. Pollution Prevention in Different Sectors:</h4>
+    <h5>Industrial:</h5> Manufacturers can implement cleaner production processes, use less toxic materials, and recycle or reuse waste products.
+    <h5>Agricultural:</h5> Farming practices like integrated pest management can reduce chemical use, and conservation tillage can prevent soil erosion.
+    <h5>Transportation:</h5> Encouraging public transit, carpooling, and promoting electric vehicles can reduce air pollution.
+    <h5>Household:</h5> Individuals can adopt practices like reducing energy consumption, composting, and using eco-friendly products.
+<br>
+Governments can incentivize P2 through tax breaks, subsidies, and regulations that encourage cleaner practices.
+ conclusion, pollution prevention is a holistic and forward-thinking approach to addressing environmental challenges. It emphasizes the importance of preventing pollution at its source rather than managing its consequences. It requires collaboration among governments, industries, and individuals to promote sustainable practices and protect the planet for future generations.
+          
+</p>
+        </div>
+        
+        <div class="col-md-5">
+          <img style="margin-top: 20%; width: 100%;" src="data:image/png;base64,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" alt="">
+          <img style="margin-top: 20%; width: 100%;" src="https://www.epa.gov/system/files/styles/large/private/images/2021-11/sourcereductionflyer-11042021_612x800.jpg?itok=AXgmcRRo" alt="">
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="Management">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <p>
+        <h2 class="pollhead">Waste Management</h2>
+        Waste management or waste disposal includes the processes and actions required to manage waste from its inception to its final disposal.[1] This includes the collection, transport, treatment, and disposal of waste, together with monitoring and regulation of the waste management process and waste-related laws, technologies, and economic mechanisms.
+        <br><br>
+        Waste can be solid, liquid, or gases and each type has different methods of disposal and management. Waste management deals with all types of waste, including industrial, biological, household, municipal, organic, biomedical, radioactive wastes. In some cases, waste can pose a threat to human health.
+      </p>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<br><br><hr><br>
+<div>
+  <p class="pollhead">Feedback</p>
+  <form action="/feedback" method="get">
+    <div class="row" id="form1">
+    <div class="col-md-4" ><p class="last">
+    Please give your thoughts and opinion on the above topic . <br>
+    Also provide any prevention that me help in preventing of our environment and Earth.
+    </p></div>
+    <div class="col-md-3">
+      Name <input type="text" name="opname" placeholder="name"><br><br>
+      Email Id <input type="text" name="opemail" placeholder="example@gmail.com"><br><br>
+      Address <input type="text" name="opaddress" placeholder="121/14 Modern Colony , New Delhi"><br>
+      <br><br>
+      <button name="submitf" class="btn btn-outline-success">Submit Feeddback</button>
+      <input type="submit" name="updatebtn" value="Update" class="btn btn-outline-success">
+    </div>
+    <div class="col-md-4">
+      Your Openion <br><textarea name="commetn" placeholder="Write your thoughts on..." cols="30" rows="10"></textarea>
+    </div>
+    <%=msg %>
+  </div>
+  </form>
+</div>
+<div class="container">
+  <section id="contact">
+    <div class="container">
+      <h3 class="ch2">Contact Us</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+         <h6>Contact Mail: hrdwivedi2906@gmail.com</h6> 
+         <i class="fa-solid fa-envelope yel"></i><a href="mailto:hrdwivedi2906@gmail.com">Email</a>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>Contact No: 8874489099 </h6> 
+          <i class="fa-solid fa-phone yel"></i><a href="tel:8874489099">88874489099</a>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>For Pollution Control Contact :</h6> 
+          <i class="fa-solid fa-envelope yel"></i><a href="mailto:sirdevil39@gmail.com">Control</a>
+        </div>
+      </div>
+    </div>
+   </section> <br><hr><br>
+  <section id="cico">
+    <div class="container text-center">
+      <p style="font-weight: 400; color: #26606a; font-size: 2rem;">Our Social Media</p>
+      <div class="social-icon">
+          <a href="tel:8874489099"><i class=" imc fa-brands fa-whatsapp yel1"></i></a>
+          <a href="https://www.instagram.com/hare_ram_dwivedi_03/"><i class=" imc fa-brands fa-instagram yel1"></i></a>
+        <a href="https://twitter.com/ram_hare_"> <i class=" imc fa-brands fa-twitter yel1"></i></a>
+        <a href="https://www.youtube.com/results?search_query=pollution"><i class=" imc fa-brands fa-youtube yel1"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100081096761202"><i class=" imc fa-brands fa-facebook yel1"></i></a>
+        
+      </div>
+    </div>
+    </section>
+</div>
+</body>
+</html>
+

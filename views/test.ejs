@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+        }
+        a{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            text-align: center;
+            /* font-family: buttermilk; */
+            font-size: 9vh;
+            text-decoration: none;
+            color: wheat;
+            mix-blend-mode: difference;
+            animation: apper ease-in-out 2s;
+        }
+
+        @keyframes apper {
+            0%{
+                left: -25%;
+            }
+            70%{
+                left: 37%;
+            }
+            80%{
+                left: 30%;
+            }
+            90%{
+                left: 34%;
+            }
+            100%{
+                left: 30%;
+            }
+            
+        }
+        p{
+            position: absolute;
+            top: 80%;
+            left: 39%;
+            text-align: center;
+            font-size: 20px;
+            justify-content: center;
+            color: wheat;
+            letter-spacing: 3px;
+            /* mix-blend-mode:difference; */
+            background-color: black;
+            animation: ppp ease-in-out 2s;
+        }
+        @keyframes ppp {
+            0%{
+                left: 200%;
+                background-color: transparent;
+            }
+            70%{
+                left: 36%;
+                background-color: rgba(0, 0, 0, 0.214);
+            }
+            80%{
+                left: 45%;
+                background-color: rgba(0, 0, 0, 0.416);
+            }
+            90%{
+                left: 40%;
+                background-color: rgba(0, 0, 0, 0.722);
+            }
+            100%{
+                left: 39%;
+                background-color: black;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://images.unsplash.com/photo-1585495596846-f2818568f1a5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <a href="/register"><h1>POLLUTION</h1></a>
+        <p>Pollution speaks volumes in silence. <br> Let's edit our impact, <br>rewrite a cleaner story for our planet.</p>
+    </div>
+</body>
+</html>

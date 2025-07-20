@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Feedback Update Window</h1>
+    <form action="/update" class="table table-hover">
+        <tr>
+            <td>Unique Id</td>
+            <td><input type="text" name="t9" value="<%=r1[0]._id %>" readonly></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="t9" value="<%=r1[0]._Name %>" readonly></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="t10" value="<%=r1[0].Email %>" readonly></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="t9" value="<%=r1[0].Address %>" readonly></td>
+        </tr>
+        <tr>
+            <td>Openion</td>
+            <td><input type="text" name="t9" value="<%=r1[0].Openion %>" readonly></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update" name="b5" ></td>
+        </tr>
+    </form>
+</body>
+</html>

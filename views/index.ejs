@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 2;
+            font-size: 1.7rem;
+            /* background-color: white; */
+            /* background-image: url(https://images.unsplash.com/photo-1585495596846-f2818568f1a5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+            /* background: linear-gradient(141deg, #0ed7ca 0%, #1fc8db 51%, #2cb5e8 75%); */
+            background-size: cover;
+            background-repeat: no-repeat;
+               overflow-x: hidden;
+               scroll-behavior: smooth;
+               background: linear-gradient(141deg, #d9f2c8 0%, #2cb5e8 51%, #d9f2c8 75%);
+
+               margin: 0;
+               padding: 0;
+               margin-top: 20px;
+               animation: load ease-in-out 2s;
+        }
+        @keyframes load {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+        .img11{
+            width: 450px;
+            height: 400px;
+            overflow: hidden;
+            padding: 7px;
+        }
+        .img11{
+            margin-top: 20%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all ease 1s;
+            mix-blend-mode: difference;
+        }
+
+        .img11:hover{
+            scale: 1.05;
+        }
+
+        .contentt{
+            width: 100%;
+            height: 100%;
+        }
+
+        .contentt .block1{
+            transition: all ease 1.5s; }
+        .container-fluid{
+            margin-top: 40px;
+        }
+        
+        h1{
+            background-color: rgba(188, 202, 205, 0.332);
+            margin-right: 50%;
+            width: 100%;
+            opacity: 0.7;
+            border-radius:40em;
+            box-shadow: 3px 3px 7px 3px #0c607e;
+            margin-bottom: 3.5%;
+            margin-top: 05%;
+
+        }
+        #main {
+            background-color: rgba(188, 202, 205, 0.356);
+            border-radius: 20px;
+            height: 75%;
+            box-shadow: 3px 3px 7px 3px #0c607e;
+
+        }
+        .block1{
+            background-color: rgba(188, 202, 205, 0.344);
+            width: 90%;
+            border-radius: 10px;
+            margin-right: 12px;
+            transition: 0.6s all ;
+            box-shadow: 3px 3px 7px 3px #0c607e;
+
+            
+        }
+        .block1:hover{
+            transform: translateY(-6px);
+        }
+        .ico{
+            font-size: 3rem;
+        justify-content: center;
+        padding: 5%;
+        color: #a92323;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6" >
+            <div class="img11">
+                <a href="/register"><h1>POLLUTION <br>
+                    AWARENESS</h1></a>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5" id="main">
+            <p >Pollution is the introduction of contaminants into the natural
+             environment that cause adverse change. Pollution can take the form of any substance 
+            (solid, liquid, or gas) or energy (such as radioactivity, heat, sound, or light). Pollutants,
+             the components of pollution, can be either foreign substances/energies or naturally occurring 
+             contaminants.</p>
+            <p>For further more information click on the register button below</p></div>
+            
+    </div>
+    </div>
+    <br><hr><br>
+    <div class="container">
+
+    <div class="row contentt">
+            <div class="col-md-3 block1">
+                <i class="fa-solid fa-pager ico"></i>
+                <p>All about Pollution , with minute details included.
+                    Refrences to some place or years are also given
+                    for better refference
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-3 block1">
+                <i class="fa-solid fa-image ico"></i>
+                <p>Best quality images are used in the contet , for giving best visual apeal 
+                    to the content . World map with legends are also present
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 block1">
+                <i class="fa-brands fa-wpforms ico"></i>
+                <p >At the end a form is given for your personal feedback.
+                    And your thoughts on Pollution and it's prevention
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <!-- <button class="btn" ><a href="/register">Register</a></button> -->
+            <!-- <input type="submit" class="btn btn-outline-primary" id="submit"  name="butun" value="More"> -->
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<!-- btn-outline-danger -->
